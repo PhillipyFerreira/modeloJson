@@ -1,0 +1,59 @@
+{
+"Departamentos":
+	[{
+		"id"	: "INTEIRO",
+		"nome"	: "STRING",
+		"professores":
+		[
+			"idProf1",
+			"idProf2",
+			"...",
+			"idprofN"
+		]
+	}],
+"Professores":
+	[{
+			"id": "INTEIRO",
+			"nome": "STRING"
+	}],
+"Alunos":
+	[{
+		"id": 	"INTEIRO",
+		"nome": "STRING",
+		"matricula":
+		[{
+			"semestre": "STRING",
+			"disciplinas":
+			[{
+				"idDisciplina"	: "INTEIRO",
+				"notaFinal"		: "DECIMAL"
+			}]
+		}]
+	}],
+"Disciplinas":
+	[{
+		"id"		: "INTEIRO",
+		"nome"		: "STRING",
+		"idDpto"	: "INTEIRO"
+	}],
+"DisciplinasSemestre":
+	[{
+		"semestre": "STRING",
+		"ofertas":
+		[{
+			"idDisciplina"	: "INTEIRO",
+			"idProfessor"	: "INTEIRO",
+			"idSala"		: "INTEIRO"
+		}]
+	}],
+"Salas":
+	[{
+		"id"	: "INTEIRO",
+		"local"	: 
+		{
+			"idDpto"		: "INTEIRO",
+			"nome"			: "STRING",
+			"Localizacao"	: "STRING"
+		}
+	}]
+}
